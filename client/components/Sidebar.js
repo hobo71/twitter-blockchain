@@ -23,7 +23,7 @@ function Sidebar() {
             </div>
             <div className={style.navContainer}>
                 <div>Home</div>
-                <div>Explor</div>
+                <div>Explore</div>
                 <div>Notifications</div>
                 <div>Messages</div>
                 <div>Bookmarks</div>
@@ -31,7 +31,14 @@ function Sidebar() {
                 <div>Profile</div>
                 <div>More</div>
                 <div className={style.tweetButton}>Mint</div>
-
+            </div>
+            <div className={style.profileButton}>
+                <div className={style.profileLeft}></div>
+                <div className={style.profileRight}>
+                    <div className={style.details}>
+                    <div className={style.name}>sajustsmile</div>
+                    </div>
+                </div>
             </div>
         </div>
     )
