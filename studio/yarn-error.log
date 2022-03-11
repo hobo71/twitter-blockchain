@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Sandra\AppData\Roaming\npm\node_modules\@sanity\cli\vendor\yarn install --json --non-interactive --ignore-engines --network-timeout 60000 --registry https://registry.npmjs.org
+
+PATH: 
+  C:\Users\Sandra\AppData\Roaming\npm\node_modules\vendor;C:\Python310\Scripts\;C:\Python310\;C:\Python\Python396\Scripts\;C:\Python\Python396\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Sandra\AppData\Roaming\npm\;C:\Apache24\bin;C:\PHP7;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\PuTTY\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git LFS;C:\Program Files\Git\cmd;C:\Users\Sandra\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Sandra\AppData\Local\Programs\Python\Python39\;C:\Users\Sandra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sandra\AppData\Roaming\npm;C:\Users\Sandra\AppData\Local\nvs\;C:\Program Files\heroku\bin;C:\Program Files\Docker\Docker\resources\bin;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\Sandra\AppData\Roaming\npm\node_modules\@sanity\cli\vendor\yarn:135945:19)
+      at Object.onceWrapper (node:events:509:28)
+      at ClientRequest.emit (node:events:390:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:763:9)
+      at Object.onceWrapper (node:events:509:28)
+      at TLSSocket.emit (node:events:402:35)
+      at TLSSocket.Socket._onTimeout (node:net:501:8)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
+
+npm manifest: 
+  {
+    "name": "twitterblockchain",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "package.json",
+    "author": "Sandra Ashipala <sajustsmile@live.com>",
+    "license": "UNLICENSED",
+    "scripts": {
+      "start": "sanity start",
+      "build": "sanity build"
+    },
+    "keywords": [
+      "sanity"
+    ],
+    "dependencies": {
+      "@sanity/base": "^2.28.2",
+      "@sanity/core": "^2.28.1",
+      "@sanity/default-layout": "^2.28.2",
+      "@sanity/default-login": "^2.28.2",
+      "@sanity/desk-tool": "^2.28.2",
+      "@sanity/eslint-config-studio": "^2.0.0",
+      "@sanity/vision": "^2.28.2",
+      "eslint": "^8.6.0",
+      "prop-types": "^15.7",
+      "react": "^17.0",
+      "react-dom": "^17.0",
+      "styled-components": "^5.2.0"
+    },
+    "devDependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
