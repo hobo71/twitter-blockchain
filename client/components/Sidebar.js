@@ -36,7 +36,11 @@ function Sidebar() {
                 <div className={style.profileLeft}></div>
                 <div className={style.profileRight}>
                     <div className={style.details}>
-                    <div className={style.name}>sajustsmile</div>
+                        <div className={style.name}>sajustsmile</div>
+                        <div className={style.handle}>@0x76e7866d65A847a0B729943701b69e858ad9a42c</div>
+                    </div>
+                    <div className={style.moreContainer}>
+                        <FiMoreHorizontal />
                     </div>
                 </div>
             </div>
