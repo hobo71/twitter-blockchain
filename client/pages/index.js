@@ -1,4 +1,4 @@
-import Sidebar from '../componets/Sidebar'
+import Sidebar from '../components/Sidebar'
 
 const style = {
   wrapper: `flex justify-center h-screen w-screen select-none bg-[#15202b] text-white`,

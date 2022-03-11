@@ -19,7 +19,19 @@ function Sidebar() {
     return(
         <div className={style.wrapper}>
             <div className={style.twitterIconContainer}>
-                <vscTwitter />
+                <VscTwitter />
+            </div>
+            <div className={style.navContainer}>
+                <div>Home</div>
+                <div>Explor</div>
+                <div>Notifications</div>
+                <div>Messages</div>
+                <div>Bookmarks</div>
+                <div>Lists</div>
+                <div>Profile</div>
+                <div>More</div>
+                <div className={style.tweetButton}>Mint</div>
+
             </div>
         </div>
     )
