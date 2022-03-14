@@ -1,4 +1,7 @@
 import React from 'react';
+import { BsFillPatchCheckFill } from 'react-icons/bs';
+import { format } from 'timeago.js';
+
 const style = {
     wrapper: `flex p-3 border-b border-[#38444d]`,
     postMain: `flex-1 px-4`,
@@ -18,6 +21,7 @@ const Post = ({
     username,
     avatar,
     text,
+    timestamp,
     isProfileImageNFT,
 }) => {
     return (
@@ -27,11 +31,27 @@ const Post = ({
                     src={avatar}
                     alt={username}
                     className={
-                        true ? `${style.profileImage} smallHex`
+                        //true: displays NFTs in hexBox
+                        isProfileImageNFT ? `${style.profileImage} smallHex`
                         : style.profileImage
                 }
                 />
             </div>
+            <div className={style.postMain}>
+                <div>
+                    <span className={style.headerDetails}>
+                        <span className={style.name}>{displayName}</span>
+                    {isProfileImageNFT && (
+                        <span className={style.verified}>
+                        <BsFillPatchCheckFill />
+                        </span>
+                   )} 
+                    </span>
+                   <span className={style.handleAndTimeAgo}>
+                        @{username} • {format(new Date(timestamp).getTime())}
+                    </span>
+                </div>
+            </div> 
         </div>
       )
 }
