@@ -3,7 +3,7 @@ export const news = [
       category: 'SAJUSTSMILE • LIVE',
       title: 'sajustsmile is live on YouTube!',
       image:
-        'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png',
+        'https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_960_720.jpg',
     },
     {
       category: 'Databases • Trending',

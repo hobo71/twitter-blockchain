@@ -40,8 +40,31 @@ const Widgets = () => {
                         <div className={style.newsItemCategory}>{item.category}</div>
                         <div className={style.newsItemTitle}>{item.title}</div>
                     </div>
+                    <div className={style.newsItemRight}>
+                        <img  src={item.image}
+                            alt={item.category}
+                            className={style.newsItemImage}
+                        />
+                    </div>
                 </div>
             ))}
+            <div className={style.showMore}>Show More</div>
+        </div>
+        <div className={style.section}>
+        <div className={style.title}>Who to folllow</div>
+        {whoToFollow.map((item, index) => (
+            <div key={index} className={style.item}>
+                <div>
+                    <img src={item.avatar} alt={item.handle} 
+                    className={style.followAvatar}/>
+                </div>
+                <div>
+                    <div className={style.name}>{item.handle}</div>
+                    <div className={style.handle}>{item.name}</div>
+                </div>
+                <div className={style.followButton}>Follow</div>
+                </div>
+        ))}
         </div>
     </div>
     )
