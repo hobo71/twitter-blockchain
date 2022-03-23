@@ -27,17 +27,17 @@ export const news = [
   
   export const whoToFollow = [
     {
-      name: 'Sandra Ashipala',
-      handle: '@sajustsmile',
-      avatar:
-        'https://pbs.twimg.com/profile_images/1472075657920221184/JhAI3WGm_400x400.jpg',
-    },
-    {
       name: 'John Trevolta',
       handle: '@0xJTrevolta',
       avatar:
         'https://pbs.twimg.com/profile_images/1282571486465855491/98xO6N0F_400x400.jpg',
     },
+    {
+        name: 'Sandra A.',
+        handle: '@sajustsmile',
+        avatar:
+          'https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_960_720.jpg',
+      },
     {
       name: 'Sanity.io',
       handle: '@sanity_io',
