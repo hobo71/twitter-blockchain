@@ -15,7 +15,7 @@ const tweets = [
         avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
         text: 'gm',
         isProfileImageNFT: false,
-        timestamp: '2022-02-04T12:01:00.000Z', // Sanity.io default storing style
+        timestamp: '2022-03-023T12:01:00.000Z', // Sanity.io default storing style
 
     },
     {
@@ -67,7 +67,7 @@ function Feed() {
                 <Post 
                     key={index}
                     displayName={tweet.displayName}
-                    username={tweet.username}
+                    username={`${tweet.username.slice(0, 4)}...${tweet.username.slice(-4)}`}
                     avatar={tweet.avatar}
                     text={tweet.text}
                     isProfileImageNFT={tweet.isProfileImageNFT}
