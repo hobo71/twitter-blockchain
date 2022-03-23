@@ -1,7 +1,10 @@
 import React from 'react';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
 import { format } from 'timeago.js';
-import { FaRegComment } from 'react-icons/fa'
+import { FaRegComment, FaRetweet } from 'react-icons/fa';
+import { FiShare } from 'react-icons/fi';
+import { AiOutlineHeart } from 'react-icons/ai';
+
 
 const style = {
     wrapper: `flex p-3 border-b border-[#38444d]`,
@@ -56,6 +59,15 @@ const Post = ({
                 <div className={style.footer}>
                     <div className={`${style.footerIcon} hover:bg-[#1e364a] hover:text-[#1d9bf0]`}>
                         <FaRegComment />
+                    </div>
+                    <div className={`${style.footerIcon} hover:bg-[#1b393b] hover:text-[#03ba7c]`}>
+                        <FaRetweet />
+                    </div>
+                    <div className={`${style.footerIcon} hover:bg-[#39243c] hover:text-[#f91c80]`}>
+                        <AiOutlineHeart />
+                    </div>
+                    <div className={`${style.footerIcon} hover:bg-[#1e364a] hover:text-[#1d9bf0]`}>
+                        <FiShare />
                     </div>
                 </div>
             </div> 
