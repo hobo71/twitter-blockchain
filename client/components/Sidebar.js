@@ -23,7 +23,7 @@ const style = {
     navContainer: `flex-1`,
     profileButton: `flex items-center mb-6 cursor-pointer hover:bg-[#333c45]`,
     profileLeft: `flex item-center justify-center mr-4`,
-    profileImage:`height-12 w-12 rounded-full`,
+    profileImage:`h-12 w-12 rounded-full`,
     profileRight: `flex-1 flex`,
     details: `flex-1`,
     name:`text-lg`,
