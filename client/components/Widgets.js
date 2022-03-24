@@ -58,7 +58,7 @@ const Widgets = () => {
                     <img src={item.avatar} alt={item.handle} 
                     className={style.followAvatar}/>
                 </div>
-                <div>
+                <div className={style.profileDetails}>
                     <div className={style.name}>{item.handle}</div>
                     <div className={style.handle}>{item.name}</div>
                 </div>
