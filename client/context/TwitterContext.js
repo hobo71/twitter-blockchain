@@ -26,13 +26,11 @@ export const TwitterProvider = ({ children }) => {
         setAppStatus('connected')
         setCurrentAccount(addressArray[0])
 
-        createUserAccount(addressArray[0])
       } else {
         router.push('/')
         setAppStatus('notConnected')
       }
-    } catch (err) {
-      router.push('/')
+    } catch (error) {
       setAppStatus('error')
     }
   }
@@ -50,7 +48,7 @@ export const TwitterProvider = ({ children }) => {
       })
 
       if (addressArray.length > 0) {
-        setCurrentAccount(addressArray[0])
+        setCurrentAccount('connected')
         createUserAccount(addressArray[0])
       } else {
         router.push('/')
@@ -67,7 +65,7 @@ export const TwitterProvider = ({ children }) => {
           value={{
             appStatus,
             currentAccount,
-            connectWallet,
+            connectWallet
           }}
         >
           {children}
