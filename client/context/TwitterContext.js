@@ -7,7 +7,7 @@ export const TwitterContext = createContext()
 export const TwitterProvider = ({ children }) => {
   const [appStatus, setAppStatus] = useState('')
   const [currentAccount, setCurrentAccount] = useState('')
-  //const [currentUser, setCurrentUser] = useState({})
+  const [currentUser, setCurrentUser] = useState({})
   const router = useRouter()
 
   useEffect(() => {
@@ -77,6 +77,8 @@ export const TwitterProvider = ({ children }) => {
       }
 
       await client.createIfNotExists(userDoc)
+      
+      setAppStatus('connected')
     } catch (error){
       router.push('/')
       setAppStatus('error')

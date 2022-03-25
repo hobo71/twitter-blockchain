@@ -1,6 +1,6 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "ProfileImageNfts",
+  "contractName": "ProfileImageNFTs",
   "sourceName": "contracts/MintProfileImage.sol",
   "abi": [
     {

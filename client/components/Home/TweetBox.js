@@ -1,9 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { BsCardImage, BsEmojiSmile } from 'react-icons/bs';
 import { RiFileGifLine, RiBarChartHorizontalFill } from 'react-icons/ri';
 import { IoMdCalendar } from 'react-icons/io';
 import { MdOutlineLocationOn } from 'react-icons/md';
+import { client } from '../../lib/client';
+import { TwitterContext } from '../../context/TwitterContext';
+
 
 const style = {
     wrapper: `px-4 flex flex-row border-b border-[#38444d] pb-4`,
@@ -19,12 +22,44 @@ const style = {
     activeSubmit: `bg-[#1d9bf0] text-white`,
 }
 
-const TweetBox = () => {
+function TweetBox() {
     const [tweetMessage, setTweetMessage] = useState('')
-
-    const postTweet = (event) => {
-        event.preventDefault()
-        console.log(tweetMessage)
+    const { currentAccount } = useContext(TwitterContext)
+  
+    const postTweet = async (event) => {
+      event.preventDefault()
+  
+      if (!tweetMessage) return
+      const tweetId = `${currentAccount}_${Date.now()}`
+  
+      const tweetDoc = {
+        _type: 'tweets',
+        _id: tweetId,
+        tweet: tweetMessage,
+        timestamp: new Date(Date.now()).toISOString(),
+        author: {
+          _key: tweetId,
+          _ref: currentAccount,
+          _type: 'reference',
+        },
+      }
+  
+      await client.createIfNotExists(tweetDoc)
+  
+      await client
+        .patch(currentAccount)
+        .setIfMissing({ tweets: [] })
+        .insert('after', 'tweets[-1]', [
+          {
+            _key: tweetId,
+            _ref: tweetId,
+            _type: 'reference',
+          },
+        ])
+        .commit()
+  
+      //await fetchTweets()
+      setTweetMessage('')
     }
 
     return <div className={style.wrapper}>
@@ -37,12 +72,12 @@ const TweetBox = () => {
         </div>
         <div className={style.tweetBoxRight}>
             <form>
-                <textarea
-                    className={style.inputField}
-                    placeholder="What's happening?"
-                    value={tweetMessage}
-                    onChange={(e) => setTweetMessage(e.target.value)}
-                />
+            <textarea
+            onChange={e => setTweetMessage(e.target.value)}
+            value={tweetMessage}
+            placeholder="What's happening?"
+            className={style.inputField}
+          />
                 <div className={style.formLowerContainer}>
                     <div className={style.iconsContainer}>
                         <BsCardImage className={style.icon} />
@@ -52,10 +87,15 @@ const TweetBox = () => {
                         <BsEmojiSmile className={style.icon} />
                         <MdOutlineLocationOn className={style.icon} />
                     </div>
-                    <button type="submit" className={`${style.submitGeneral} ${
+                    <button
+                    type='submit'
+                    onClick={event => postTweet(event)}
+                    disabled={!tweetMessage}
+                    className={`${style.submitGeneral} ${
                         tweetMessage ? style.activeSubmit : style.inactiveSubmit
-                    }`}>
-                        Tweet
+                    }`}
+                    >
+                    Tweet
                     </button>
                 </div>
             </form>
@@ -63,4 +103,4 @@ const TweetBox = () => {
     </div>
 }
 
-export default TweetBox
+export default TweetBox;

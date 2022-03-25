@@ -19,14 +19,14 @@ export const userSchema = {
         title: 'Profile Image',
       },
       {
-        name: 'isProfileImageNft',
+        name: 'isProfileImageNFT',
         title: 'Is Profile Image NFT',
         type: 'boolean',
       },
       {
-        name: 'coverImage',
+        name: 'headerBanner',
         type: 'string',
-        title: 'Cover Image',
+        title: 'Header Banner',
       },
       {
         name: 'tweets',
