@@ -22,11 +22,11 @@ function SidebarOption({ text, Icon, isActive, setSelected, redirect}){
         <Icon />
         </div>
 
-        <div className={`${isActive ? style.textActive : style.textGenral}`}>
+        <div className={`${isActive ? style.textActive : style.textGeneral}`}>
             {text}
         </div>
         </div>
     )
 }
 
-export default SidebarOption
+export default SidebarOption;
