@@ -1,8 +1,10 @@
 import  Link from 'next/link';
+import { useState, useContext } from 'react';
+import { useRouter} from 'next/router';
+import { TwitterContext } from '../context/TwitterContext';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { VscTwitter } from 'react-icons/vsc';
 import SidebarOption from './SidebarOption';
-import  { useState } from 'react';
 import { RiHome7Line, RiHome7Fill, RiFileList2Fill } from 'react-icons/ri' 
 import { BiHash } from 'react-icons/bi'
 import { FiBell } from 'react-icons/fi'
@@ -32,6 +34,10 @@ wrapper: `flex-[0.6] px-4 flex flex-col`,
 }
 function Sidebar({ initialSelectedIcon = 'Home'}) {
     const [selected, setSelected] = useState(initialSelectedIcon)
+    const { currentAccount, currentUser } = useContext(TwitterContext)
+    const router = useRouter()
+
+
     return(
         <div className={style.wrapper}>
             <div className={style.twitterIconContainer}>
@@ -77,14 +83,33 @@ function Sidebar({ initialSelectedIcon = 'Home'}) {
                 />
                     <SidebarOption Icon = {CgMoreO} text = 'More' setSelected={setSelected}
                 />
-                <div className={style.tweetButton}>Mint</div>
-            </div>
-            <div className={style.profileButton}>
-                <div className={style.profileLeft}></div>
-                <div className={style.profileRight}>
+                <div
+                    onClick={() =>
+                        router.push(`${router.pathname}/?mint=${currentAccount}`)
+                    }
+                    className={style.tweetButton}
+                    >
+                    Mint
+                    </div>
+                </div>
+                <div className={style.profileButton}>
+                    <div className={style.profileLeft}>
+                    <img
+                        src={currentUser.profileImage}
+                        alt='profile'
+                        className={
+                        currentUser.isProfileImageNFT
+                            ? `${style.profileImage} smallHex`
+                            : style.profileImage
+                        }
+                    />
+                    </div>
+                    <div className={style.profileRight}>
                     <div className={style.details}>
-                        <div className={style.name}>sajustsmile</div>
-                        <div className={style.handle}>@0x76e7866d65A847a0B729943701b69e858ad9a42c</div>
+                        <div className={style.name}>{currentUser.name}</div>
+                        <div className={style.handle}>
+                        @{currentAccount.slice(0, 6)}...{currentAccount.slice(-6)}
+                        </div>
                     </div>
                     <div className={style.moreContainer}>
                         <FiMoreHorizontal />
