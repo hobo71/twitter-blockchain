@@ -14,14 +14,14 @@ export const userSchema = {
         title: 'Wallet Address',
       },
       {
-        name: 'profileImage',
-        type: 'string',
-        title: 'Profile Image',
-      },
-      {
         name: 'isProfileImageNFT',
         title: 'Is Profile Image NFT',
         type: 'boolean',
+      },
+      {
+        name: 'profileImage',
+        type: 'string',
+        title: 'Profile Image',
       },
       {
         name: 'headerBanner',

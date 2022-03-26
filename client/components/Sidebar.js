@@ -11,6 +11,9 @@ import { FiBell } from 'react-icons/fi'
 import { HiOutlineMail, HiMail } from 'react-icons/hi'
 import { FaRegListAlt, FaHashtag, FaBell } from 'react-icons/fa'
 import { CgMoreO } from 'react-icons/cg'
+import Modal from 'react-modal'
+import ProfileImageMinter from './profile/mintingModal/ProfileImageMinter'
+import { customStyles } from '../lib/constants'
 import {
     BsBookmark,
     BsBookmarkFill,
@@ -116,6 +119,14 @@ function Sidebar({ initialSelectedIcon = 'Home'}) {
                     </div>
                 </div>
             </div>
+            
+      <Modal
+        isOpen={Boolean(router.query.mint)}
+        onRequestClose={() => router.back()}
+        style={customStyles}
+      >
+        <ProfileImageMinter />
+      </Modal>
         </div>
     )
 

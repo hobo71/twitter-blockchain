@@ -2,7 +2,7 @@ const hre = require('hardhat')
 
  async function main() {
   const profileImageFactory = await hre.ethers.getContractFactory(
-    'ProfileImageNfts',
+    'ProfileImageNFTs',
   )
   const profileImageContract = await profileImageFactory.deploy()
 

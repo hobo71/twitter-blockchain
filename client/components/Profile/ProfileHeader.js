@@ -3,9 +3,8 @@ import { BsArrowLeftShort } from 'react-icons/bs';
 //import headerBanner from './img/headerBanner.jpg'
 import { useContext, useEffect, useState } from 'react'
 import { TwitterContext } from '../../context/TwitterContext'
-import { BsArrowLeftShort } from 'react-icons/bs'
 import Modal from 'react-modal'
-import ProfileImageMinter from './mintingModal/ProfileImageMinter'
+//import ProfileImageMinter from './mintingModal/ProfileImageMinter'
 import { customStyles } from '../../lib/constants'
 
 const style = {
@@ -27,15 +26,6 @@ const style = {
 
 const ProfileHeader = () => {
     const { currentAccount, currentUser } = useContext(TwitterContext)
-    const [userData, setUserData] = useState<UserData>({
-      name: '',
-      profileImage: '',
-      coverImage: '',
-      walletAddress: '',
-      tweets: [],
-      isProfileImageNFT: undefined,
-    })
-
     const router = useRouter()
 
     //const isProfileImageNFT = true
@@ -61,10 +51,10 @@ const ProfileHeader = () => {
             />
         </div>
         <div className={style.profileImageContainer}>
-            <div className={isProfileImageNFT ? 'hex' : style.profileImageContainer}>
-                <img src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' 
+            <div className={currentUser.isProfileImageNFT ? 'hex' : style.profileImageContainer}>
+                <img src={currentUser.profileImage}
                 alt='sajustsmile'
-                className={isProfileImageNFT ? style.profileImageNFT : style.profileImage}
+                className={currentUser.isProfileImageNFT ? style.profileImageNFT : style.profileImage}
                 />
             </div>
         </div>
