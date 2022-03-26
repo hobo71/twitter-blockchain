@@ -1,4 +1,6 @@
 import Post from '../Post';
+import { useContext, useEffect, useState } from 'react'
+import { TwitterContext } from '../../context/TwitterContext'
 
 const style = {
     wrapper: `no-scrollbar`,
@@ -56,21 +58,39 @@ const style = {
 ]
 
 const ProfileTweets = () => {
-  return (
-    <div className={style.wrapper}>
-        {tweets?.map((tweet, index) => (
-            <Post 
-            key={index}
-            displayName='Sandra A.'
-            username={`${tweet.username.slice(0, 4)}...${tweet.username.slice(-4)}`}
-            text={tweet.text}
-            avatar={tweet.avatar}
-            isProfileImageNFT={tweet.isProfileImageNFT}
-            timestamp={tweet.timestamp}
+    const { currentAccount, currentUser } = useContext(TwitterContext)
+    /*const [tweets, setTweets] = useState<Tweets>([
+      {
+        timestamp: '',
+        tweet: '',
+      },
+    ])*/
+
+    return (
+        <div className={style.wrapper}>
+          {currentUser.tweets?.map((tweet, index) => (
+            <Post
+              key={index}
+              displayName={
+                author.name === 'Unnamed'
+                  ? `${author.walletAddress.slice(
+                      0,
+                      4,
+                    )}...${author.walletAddress.slice(-4)}`
+                  : author.name
+              }
+              userName={`${author.walletAddress.slice(
+                0,
+                4,
+              )}...${author.walletAddress.slice(-4)}`}
+              text={tweet.text}
+              avatar={author.profileImage}
+              timestamp={tweet.timestamp}
+              isProfileImageNFT={author.isProfileImageNFT}
             />
-        ))}
-    </div>
-  )
+          ))}
+        </div>
+      )
 }
 
 export default ProfileTweets
