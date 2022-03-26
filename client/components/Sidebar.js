@@ -12,7 +12,7 @@ import { HiOutlineMail, HiMail } from 'react-icons/hi'
 import { FaRegListAlt, FaHashtag, FaBell } from 'react-icons/fa'
 import { CgMoreO } from 'react-icons/cg'
 import Modal from 'react-modal'
-import ProfileImageMinter from './profile/mintingModal/ProfileImageMinter'
+import ProfileImageMinter from './profile/mintingModal/ProfileImageMinter' 
 import { customStyles } from '../lib/constants'
 import {
     BsBookmark,
@@ -39,7 +39,6 @@ function Sidebar({ initialSelectedIcon = 'Home'}) {
     const [selected, setSelected] = useState(initialSelectedIcon)
     const { currentAccount, currentUser } = useContext(TwitterContext)
     const router = useRouter()
-
 
     return(
         <div className={style.wrapper}>
@@ -118,15 +117,14 @@ function Sidebar({ initialSelectedIcon = 'Home'}) {
                         <FiMoreHorizontal />
                     </div>
                 </div>
-            </div>
-            
-      <Modal
-        isOpen={Boolean(router.query.mint)}
-        onRequestClose={() => router.back()}
-        style={customStyles}
-      >
-        <ProfileImageMinter />
-      </Modal>
+            </div>     
+        <Modal
+            isOpen={Boolean(router.query.mint)}
+            onRequestClose={() => router.back()}
+            style={customStyles}
+        >
+            <ProfileImageMinter />
+        </Modal>
         </div>
     )
 
