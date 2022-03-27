@@ -84,4 +84,4 @@ cd client
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/sajustsmile/twitter-blockchain/blob/main/LICENSE)
+[![GitLicense](https://img.shields.io/badge/License-Apache-yellow.svg)](https://github.com/sajustsmile/twitter-blockchain/blob/main/LICENSE)
