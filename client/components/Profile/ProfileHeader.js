@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { BsArrowLeftShort } from 'react-icons/bs';
 //import headerBanner from './img/headerBanner.jpg'
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { TwitterContext } from '../../context/TwitterContext'
 //import ProfileImageMinter from './mintingModal/ProfileImageMinter'
 import { customStyles } from '../../lib/constants'

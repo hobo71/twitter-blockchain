@@ -166,7 +166,7 @@ export const TwitterProvider = ({ children }) => {
         name,
         profileImage,
         isProfileImageNFT,
-        coverImage,
+        headerBanner,
         walletAddress
       }
     `
@@ -182,7 +182,7 @@ export const TwitterProvider = ({ children }) => {
       name: response[0].name,
       profileImage: profileImageUri,
       walletAddress: response[0].walletAddress,
-      coverImage: response[0].coverImage,
+      headerBanner: response[0].headerBanner,
       isProfileImageNFT: response[0].isProfileImageNFT,
     })
   }
