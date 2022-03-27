@@ -76,7 +76,7 @@ const Home = () => {
 
   const error = (
     <div className={style.loginContainer}>
-      <Image src={ErrorIMG} width={250} height={200} />
+      <Image src={ErrorIMG} width={250} height={200} alt=''/>
       <div className={style.loginContent}>
         An error occurred. Please try again later or from another browser.
       </div>
