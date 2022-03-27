@@ -1,3 +1,4 @@
+/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 import { news, whoToFollow } from '../lib/static'
 import { BiSearch } from 'react-icons/bi'
 

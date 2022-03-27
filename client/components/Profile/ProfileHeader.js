@@ -1,9 +1,8 @@
+/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 import { useRouter } from 'next/router';
 import { BsArrowLeftShort } from 'react-icons/bs';
-//import headerBanner from './img/headerBanner.jpg'
 import { useContext } from 'react'
 import { TwitterContext } from '../../context/TwitterContext'
-//import ProfileImageMinter from './mintingModal/ProfileImageMinter'
 import { customStyles } from '../../lib/constants'
 
 const style = {

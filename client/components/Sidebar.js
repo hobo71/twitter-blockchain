@@ -1,3 +1,4 @@
+/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 import  Link from 'next/link';
 import { useState, useContext } from 'react';
 import { useRouter} from 'next/router';
@@ -12,7 +13,7 @@ import { HiOutlineMail, HiMail } from 'react-icons/hi'
 import { FaRegListAlt, FaHashtag, FaBell } from 'react-icons/fa'
 import { CgMoreO } from 'react-icons/cg'
 import Modal from 'react-modal'
-import ProfileImageMinter from './profile/mintingModal/ProfileImageMinter' 
+import ProfileImageMinter from '../utils/ProfileImageMinter' 
 import { customStyles } from '../lib/constants'
 import {
     BsBookmark,

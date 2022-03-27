@@ -1,3 +1,4 @@
+/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 import { useContext, useEffect } from 'react'
 import { TwitterContext } from '../../../context/TwitterContext'
 import Image from 'next/image'

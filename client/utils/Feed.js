@@ -1,9 +1,8 @@
-/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/ 
 import { BsStars } from 'react-icons/bs'
-import TweetBox from './TweetBox'
-import Post from '../Post'
+import TweetBox from '../../client/components/Home/TweetBox'
+import Post from '../../client/components/Post'
 import { useContext, useEffect } from 'react'
-import { TwitterContext } from '../../context/TwitterContext'
+import { TwitterContext } from '../../client/context/TwitterContext'
 
 const style = {
     wrapper: `flex-[2] border-r border-l border-[#38444d] overflow-y-hidden`,

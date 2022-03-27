@@ -1,3 +1,4 @@
+/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 /* @type import('hardhat/config').HardhatUserConfig
 	*/
 	require('dotenv').config();

@@ -1,3 +1,4 @@
+/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 import { createContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { client } from '../lib/client';
