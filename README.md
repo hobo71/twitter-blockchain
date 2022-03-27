@@ -31,10 +31,10 @@ View the Demo on [YouTube]()
 
 ## Screenshots
 
+![pic4](https://user-images.githubusercontent.com/19821445/160284482-227d8838-3ffe-47bb-8acc-3bd1ad5a77dd.JPG)
 ![pic1](https://user-images.githubusercontent.com/19821445/160284470-5e0c29e1-8910-49db-9be6-17805067b20b.JPG)
 ![pic2](https://user-images.githubusercontent.com/19821445/160284473-d92cd6b3-85db-49d1-a504-84ed9331651a.JPG)
 ![pic3](https://user-images.githubusercontent.com/19821445/160284480-a908909a-e813-4f9d-929b-27648eaed2df.JPG)
-![pic4](https://user-images.githubusercontent.com/19821445/160284482-227d8838-3ffe-47bb-8acc-3bd1ad5a77dd.JPG)
 
 ## Technology Stack
 
