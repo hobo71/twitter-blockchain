@@ -1,9 +1,11 @@
 import React from 'react';
+import { useContext } from 'react';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
 import { format } from 'timeago.js';
 import { FaRegComment, FaRetweet } from 'react-icons/fa';
 import { FiShare } from 'react-icons/fi';
 import { AiOutlineHeart } from 'react-icons/ai';
+import { TwitterContext } from '../context/TwitterContext';
 
 
 const style = {
@@ -28,11 +30,12 @@ const Post = ({
     timestamp,
     isProfileImageNFT,
 }) => {
+    const { currentUser } = useContext(TwitterContext)
     return (
         <div className={style.wrapper}>
             <div>
                 <img
-                    src={avatar}
+                    src={currentUser.profileImage}
                     alt={username}
                     className={
                         //true: displays NFTs in hexBox

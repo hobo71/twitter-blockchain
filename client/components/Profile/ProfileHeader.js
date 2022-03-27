@@ -52,7 +52,7 @@ const ProfileHeader = () => {
         <div className={style.profileImageContainer}>
             <div className={currentUser.isProfileImageNFT ? 'hex' : style.profileImageContainer}>
                 <img src={currentUser.profileImage}
-                alt='sajustsmile'
+                alt='sandraa'
                 className={currentUser.isProfileImageNFT ? style.profileImageNFT : style.profileImage}
                 />
             </div>

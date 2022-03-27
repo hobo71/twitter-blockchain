@@ -1,5 +1,5 @@
 import Post from '../Post';
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { TwitterContext } from '../../context/TwitterContext'
 
 const style = {
@@ -9,7 +9,7 @@ const style = {
   }
  
   
-  const tweets = [
+ /* const tweets = [
     {
         displayName: 'MoonShine',
         username: '0x76e7866d65A847a0B729943701b69e858ad9a42c',
@@ -55,16 +55,10 @@ const style = {
         timestamp: '2022-06-13T12:01:00.000Z', // Sanity.io default storing style
 
     },
-]
+]*/
 
 const ProfileTweets = () => {
     const { currentAccount, currentUser } = useContext(TwitterContext)
-    /*const [tweets, setTweets] = useState<Tweets>([
-      {
-        timestamp: '',
-        tweet: '',
-      },
-    ])*/
 
     return (
         <div className={style.wrapper}>
@@ -72,21 +66,21 @@ const ProfileTweets = () => {
             <Post
               key={index}
               displayName={
-                author.name === 'Unnamed'
-                  ? `${author.walletAddress.slice(
+                currentUser.name === 'Unnamed'
+                  ? `${currentAccount.slice(
                       0,
                       4,
-                    )}...${author.walletAddress.slice(-4)}`
-                  : author.name
+                    )}...${currentAccount.slice(-4)}`
+                  :  currentUser.name
               }
-              userName={`${author.walletAddress.slice(
+              username={`${currentAccount.slice(
                 0,
                 4,
-              )}...${author.walletAddress.slice(-4)}`}
-              text={tweet.text}
-              avatar={author.profileImage}
+              )}...${currentAccount.slice(-4)}`}
+              text={tweet.tweet}
+              avatar={currentUser.profileImage}
               timestamp={tweet.timestamp}
-              isProfileImageNFT={author.isProfileImageNFT}
+              isProfileImageNFT={currentUser.isProfileImageNFT}
             />
           ))}
         </div>

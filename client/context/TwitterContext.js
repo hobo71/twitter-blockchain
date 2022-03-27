@@ -80,7 +80,7 @@ export const TwitterProvider = ({ children }) => {
         _id: userWalletAddress,
         name: 'Unnamed',
         isProfileImageNFT: false,
-        profileImage: 'https://images.pexels.com/photos/275502/pexels-photo-275502.jpeg?cs=srgb&dl=pexels-pixabay-275502.jpg&fm=jpg',
+        profileImage: 'https://images.pexels.com/photos/1832323/pexels-photo-1832323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         walletAddress: userWalletAddress,
       }
 

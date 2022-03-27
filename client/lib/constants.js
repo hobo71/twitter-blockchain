@@ -1,6 +1,6 @@
 import contractArtifact from './ProfileImageNFTs.json';
 
-export const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
+export const contractAddress = '0x76e7866d65A847a0B729943701b69e858ad9a42c'  //'0x5FbDB2315678afecb367f032d93F642f64180aa3';
 export const contractABI = contractArtifact.abi
 
 export const customStyles = {

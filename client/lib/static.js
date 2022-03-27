@@ -8,7 +8,7 @@ export const news = [
     {
       category: 'Databases • Trending',
       title:
-        'Sanity is giving you free Boosted plan, use --coupon cleverprogrammer',
+        'Sanity is giving you free Boosted plan',
       image: 'https://avatars.githubusercontent.com/u/17177659?s=280&v=4',
     },
     {
@@ -33,10 +33,10 @@ export const news = [
         'https://pbs.twimg.com/profile_images/1282571486465855491/98xO6N0F_400x400.jpg',
     },
     {
-        name: 'Sandra A.',
-        handle: '@sajustsmile',
+        name: 'Moonshine',
+        handle: '@mshine',
         avatar:
-          'https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_960_720.jpg',
+          'https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       },
     {
       name: 'Sanity.io',
