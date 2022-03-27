@@ -1,14 +1,14 @@
 /* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 import { useState, useContext } from 'react'
-import { TwitterContext } from '../../../context/TwitterContext'
+import { TwitterContext } from '../../context/TwitterContext'
 import { useRouter } from 'next/router'
-import { client } from '../../../lib/client'
-import { contractABI, contractAddress } from '../../../lib/constants'
+import { client } from '../../lib/client'
+import { contractABI, contractAddress } from '../../lib/constants'
 import { ethers } from 'ethers'
 import InitialState from './InitialState'
 import LoadingState from './LoadingState'
 import FinishedState from './FinishedState'
-import { pinJSONToIPFS, pinFileToIPFS } from '../../../lib/pinata'
+import { pinJSONToIPFS, pinFileToIPFS } from '../../lib/pinata'
 
 let metamask
 

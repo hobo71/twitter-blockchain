@@ -13,7 +13,7 @@ import { HiOutlineMail, HiMail } from 'react-icons/hi'
 import { FaRegListAlt, FaHashtag, FaBell } from 'react-icons/fa'
 import { CgMoreO } from 'react-icons/cg'
 import Modal from 'react-modal'
-import ProfileImageMinter from '../utils/ProfileImageMinter' 
+import ProfileImageMinter from './mintingModal/ProfileImageMinter' 
 import { customStyles } from '../lib/constants'
 import {
     BsBookmark,

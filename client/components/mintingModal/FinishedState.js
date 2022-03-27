@@ -1,8 +1,8 @@
 /* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
 import { useContext, useEffect } from 'react'
-import { TwitterContext } from '../../../context/TwitterContext'
+import { TwitterContext } from '../../context/TwitterContext'
 import Image from 'next/image'
-import checkMark from '../../../assets/check.png'
+import checkMark from '../../assets/check.png'
 import { useRouter } from 'next/router'
 
 const style = {
