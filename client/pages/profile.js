@@ -1,5 +1,5 @@
-import ProfileHeader from '../components/Profile/ProfileHeader';
-import ProfileTweets from '../components/Profile/ProfileTweets';
+import ProfileHeader from '../components/profile/ProfileHeader';
+import ProfileTweets from '../components/profile/ProfileTweets';
 import Sidebar from '../components/Sidebar';
 import Widgets from '../components/Widgets';
 
