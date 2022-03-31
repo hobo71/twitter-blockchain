@@ -27,7 +27,7 @@ a clone of the social networking service on which users post and interact with m
 
 ## Project Demo
 
-View the Demo on [YouTube]()
+View the Demo on [YouTube](https://youtu.be/_jF15xo0tH0)
 
 ## Screenshots
 
