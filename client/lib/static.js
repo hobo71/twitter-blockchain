@@ -44,3 +44,11 @@ export const news = [
       avatar: 'https://avatars.githubusercontent.com/u/17177659?s=280&v=4',
     },
   ]
+
+  export const signature = [
+    {
+      name: 'Designed by Sandra Ashipala &#10084;',
+      handle: '@https://github.com/sajustsmile',
+    },
+
+  ]

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Sandra Ashipala <sajustsmile@gmail.com>",
+  "author": "Sandra Ashipala <https://github.com/sajustsmile>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",

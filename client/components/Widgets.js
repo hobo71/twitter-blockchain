@@ -1,6 +1,7 @@
 /* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
-import { news, whoToFollow } from '../lib/static'
+import { news, whoToFollow, signature } from '../lib/static'
 import { BiSearch } from 'react-icons/bi'
+import { useRouter } from 'next/router';
 
 const style = {
   wrapper: `flex-[1] p-4`,
@@ -11,6 +12,8 @@ const style = {
   title: `p-2 font-bold text-lg`,
   showMore: `p-2 text-[#1d9bf0] text-sm cursor-pointer hover:bg-[#22303c]`,
   item: `flex items-center p-3 my-2 hover:bg-[#22303c] cursor-pointer`,
+  sectionSig: `bg-[#740f32] my-1 px-3 p-1 rounded-[100px] hover:bg-[#ae0152] flex flex-col items-center justify-center overflow-hidden cursor-pointer`,
+  itemSig: `flex items-center p-1 my-1`,
   newsItemLeft: `flex-1`,
   newsItemCategory: `text-[#8899a6] text-xs font-semibold`,
   newsItemTitle: `text-sm font-bold`,
@@ -22,10 +25,14 @@ const style = {
   name: `font-bold`,
   handle: `text-[#8899a6]`,
   followButton: `bg-white text-black px-3 py-1 rounded-full text-xs font-bold`,
+  profileRight: `flex-1 flex`,
+  details: `flex-1`,
 }
 
 
 const Widgets = () => {
+    const router = useRouter()
+
   return (
     <div className={style.wrapper}>
         <div className={style.searchBar}>
@@ -52,20 +59,31 @@ const Widgets = () => {
             <div className={style.showMore}>Show More</div>
         </div>
         <div className={style.section}>
-        <div className={style.title}>Who to folllow</div>
-        {whoToFollow.map((item, index) => (
-            <div key={index} className={style.item}>
-                <div>
-                    <img src={item.avatar} alt={item.handle} 
-                    className={style.followAvatar}/>
+        <div className={style.title}>Who to follow</div>
+            {whoToFollow.map((item, index) => (
+                <div key={index} className={style.item}>
+                    <div>
+                        <img src={item.avatar} alt={item.handle} 
+                        className={style.followAvatar}/>
+                    </div>
+                    <div className={style.profileDetails}>
+                        <div className={style.name}>{item.handle}</div>
+                        <div className={style.handle}>{item.name}</div>
+                    </div>
+                    <div className={style.followButton}>Follow</div>
                 </div>
-                <div className={style.profileDetails}>
-                    <div className={style.name}>{item.handle}</div>
-                    <div className={style.handle}>{item.name}</div>
-                </div>
-                <div className={style.followButton}>Follow</div>
-                </div>
-        ))}
+            ))}
+        </div>
+        <div onClick={() => router.push('https://github.com/sajustsmile')} className={style.sectionSig}>
+            {signature.map((item, index) => (
+                <div key={index} className={style.itemSig}>
+                        <div className={style.profileRight}>
+                            <div className={style.details}>
+                            <div className={style.credit}>Designed by Sandra Ashipala &#10084;</div>
+                            </div>
+                    </div>
+                </div>  
+            ))}
         </div>
     </div>
     )
