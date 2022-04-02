@@ -29,6 +29,8 @@ a clone of the social networking service on which users post and interact with m
 
 View the Demo on [YouTube](https://youtu.be/_jF15xo0tH0)
 
+Explore the [App](https://twitter-web3.vercel.app/)
+
 ## Screenshots
 
 ![pic4](https://user-images.githubusercontent.com/19821445/160284482-227d8838-3ffe-47bb-8acc-3bd1ad5a77dd.JPG)

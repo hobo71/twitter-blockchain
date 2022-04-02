@@ -12,7 +12,7 @@ const style = {
   title: `p-2 font-bold text-lg`,
   showMore: `p-2 text-[#1d9bf0] text-sm cursor-pointer hover:bg-[#22303c]`,
   item: `flex items-center p-3 my-2 hover:bg-[#22303c] cursor-pointer`,
-  sectionSig: `bg-[#740f32] my-1 px-3 p-1 rounded-[100px] hover:bg-[#ae0152] flex flex-col items-center justify-center overflow-hidden cursor-pointer`,
+  sectionSig: `bg-[#740f32] my-1 px-3 p-1 text-sm rounded-[100px] hover:bg-[#ae0152] flex flex-col items-center justify-center overflow-hidden cursor-pointer`,
   itemSig: `flex items-center p-1 my-1`,
   newsItemLeft: `flex-1`,
   newsItemCategory: `text-[#8899a6] text-xs font-semibold`,
@@ -79,7 +79,7 @@ const Widgets = () => {
                 <div key={index} className={style.itemSig}>
                         <div className={style.profileRight}>
                             <div className={style.details}>
-                            <div className={style.credit}>Designed by Sandra Ashipala &#10084;</div>
+                            <div>Designed by Sandra Ashipala &#10084;</div>
                             </div>
                     </div>
                 </div>  
