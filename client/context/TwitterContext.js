@@ -57,7 +57,7 @@ export const TwitterProvider = ({ children }) => {
       })
 
       if (addressArray.length > 0) {
-        setCurrentAccount('connected')
+        setAppStatus('connected')
         setCurrentAccount(addressArray[0])
         createUserAccount(addressArray[0])
       } else {
@@ -177,7 +177,7 @@ export const TwitterProvider = ({ children }) => {
       response[0].profileImage,
       response[0].isProfileImageNFT,
     )
-
+      //profile image
     setCurrentUser({
       tweets: response[0].tweets,
       name: response[0].name,

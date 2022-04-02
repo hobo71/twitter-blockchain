@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.2;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
@@ -31,7 +32,7 @@ contract ProfileImageNFTs is ERC721, Ownable {
         override
         returns (string memory)
     {
-        require(_exists(tokenId), "URI not exist on that ID");
+        require(_exists(tokenId), "URI does not exist on that ID");
         string memory _RUri = _tokenURIs[tokenId];
         return _RUri;
     }
