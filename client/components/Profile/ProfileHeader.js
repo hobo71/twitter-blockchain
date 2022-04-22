@@ -1,4 +1,4 @@
-/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
+/* By Sandra Ashipala <https://github.com/sandramsc> 27.03.2022*/
 import { useRouter } from 'next/router';
 import { BsArrowLeftShort } from 'react-icons/bs';
 import { useContext } from 'react'
