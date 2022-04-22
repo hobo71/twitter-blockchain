@@ -71,7 +71,7 @@ Explore the [App](https://twitter-web3.vercel.app/)
 **Step #1** - Clone the project
 
 ```bash
-$ git clone https://github.com/sajustsmile/twitter-blockchain.git
+$ git clone https://github.com/sandramsc/twitter-blockchain.git
 ```
 
 **Step #2**
@@ -86,4 +86,4 @@ cd client
 
 ## License
 
-[![GitLicense](https://img.shields.io/badge/License-Apache-yellow.svg)](https://github.com/sajustsmile/twitter-blockchain/blob/main/LICENSE)
+[![GitLicense](https://img.shields.io/badge/License-Apache-yellow.svg)](https://github.com/sandramsc/twitter-blockchain/blob/main/LICENSE)
