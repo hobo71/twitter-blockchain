@@ -1,4 +1,4 @@
-/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
+/* By Sandra Ashipala <https://github.com/sandramsc> 27.03.2022*/
 import { GiEarthAmerica } from 'react-icons/gi'
 
 const style = {
