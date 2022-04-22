@@ -29,7 +29,7 @@ a clone of the social networking service on which users post and interact with m
 
 View the Demo on [YouTube](https://youtu.be/_jF15xo0tH0)
 
-Explore the [App](https://twitter-web3.vercel.app/)
+<!--Explore the [App](https://twitter-web3.vercel.app/)-->
 
 ## Screenshots
 
