@@ -1,4 +1,4 @@
-/* By Sandra Ashipala <https://github.com/sajustsmile> 27.03.2022*/
+/* By Sandra Ashipala <https://github.com/sandramsc> 27.03.2022*/
 import { news, whoToFollow, signature } from '../lib/static'
 import { BiSearch } from 'react-icons/bi'
 import { useRouter } from 'next/router';
