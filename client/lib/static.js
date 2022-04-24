@@ -1,14 +1,14 @@
 export const news = [
     {
-      category: 'SAJUSTSMILE • LIVE',
-      title: 'sajustsmile is live on YouTube!',
+      category: 'SANDRAMSC • LIVE',
+      title: 'sandramsc is live on YouTube!',
       image:
-        'https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_960_720.jpg',
+        'https://images.pexels.com/photos/1309583/pexels-photo-1309583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
       category: 'Databases • Trending',
       title:
-        'Sanity is giving you free Boosted plan',
+        'Sanity is giving you a free Boosted plan',
       image: 'https://avatars.githubusercontent.com/u/17177659?s=280&v=4',
     },
     {
@@ -30,7 +30,7 @@ export const news = [
       name: 'John Trevolta',
       handle: '@0xJTrevolta',
       avatar:
-        'https://pbs.twimg.com/profile_images/1282571486465855491/98xO6N0F_400x400.jpg',
+        'https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
         name: 'Moonshine',
@@ -48,7 +48,7 @@ export const news = [
   export const signature = [
     {
       name: 'Designed by Sandra Ashipala &#10084;',
-      handle: '@https://github.com/sajustsmile',
+      handle: '@https://github.com/sandramsc',
     },
 
   ]

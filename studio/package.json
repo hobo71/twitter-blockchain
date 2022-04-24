@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Sandra Ashipala <https://github.com/sajustsmile>",
-  "license": "UNLICENSED",
+  "author": "Sandra Ashipala <https://github.com/sandramsc>",
+  "license": "Apache License",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build public -y",

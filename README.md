@@ -84,6 +84,24 @@ cd client
 
 - Website: To start it, run _npm start_ OR _yarn start_
 
+```
+yarn start
+```
+
+**Step #3**
+
+```
+cd studio
+```
+
+- Install dependencies via npm or yarn: _npm i_ OR _yarn_
+
+- Website: To start it, run _npm start_ OR _yarn start_
+
+```
+yarn start
+```
+
 ## License
 
 [![GitLicense](https://img.shields.io/badge/License-Apache-yellow.svg)](https://github.com/sandramsc/twitter-blockchain/blob/main/LICENSE)

@@ -74,7 +74,7 @@ const Widgets = () => {
                 </div>
             ))}
         </div>
-        <div onClick={() => router.push('https://github.com/sajustsmile')} className={style.sectionSig}>
+        <div onClick={() => router.push('https://github.com/sandramsc')} className={style.sectionSig}>
             {signature.map((item, index) => (
                 <div key={index} className={style.itemSig}>
                         <div className={style.profileRight}>
