@@ -1,9 +1,5 @@
 <!-- PROJECT TITLE -->
-  <h1 align="center">Twitter Clone</h1>
- <h2 2 align="center">
-    Twitter blockchain version
-    <br />
-    </h2>
+  <h1 align="center">Twitter blockchain version</h1>
 
 ## Application Description
 
